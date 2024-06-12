@@ -1,8 +1,9 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
+	"golang-test/controllers"
+	"net/http"
 )
 
 func main() {
@@ -14,4 +15,5 @@ func main() {
 
 func analyzeHandler(w http.ResponseWriter, r *http.Request) {
 	// Your code here
+	controllers.AnalysisHandler(w, r)
 }
